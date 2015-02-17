@@ -7,7 +7,7 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
+  background: #fff;
   opacity: 0.8;
   filter: alpha(opacity=80); }
 
@@ -145,7 +145,7 @@ button::-moz-focus-inner {
   color: #333; }
 
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-  color: #FFF;
+  color: #222;
   right: -6px;
   text-align: right;
   padding-right: 6px;
