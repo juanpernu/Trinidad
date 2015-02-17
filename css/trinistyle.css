@@ -258,3 +258,142 @@ position: relative;
 	margin: 3.5rem;
 	max-width: 200px;
 }
+
+/* ANIMATION LOGO WORK */
+
+#work .logo  {
+	animation: abajo 1.5s;
+	-webkit-animation: abajo 1.5s;
+	-moz-animation: abajo 1.5s;
+	-o-animation: abajo 1.5s;
+}
+
+@keyframes abajo {
+	0% {
+		opacity: 0;
+		transform: translate(0, -3rem);
+		-webkit-transform: translate(0, -3rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@-webkit-keyframes abajo {
+	0% {
+		opacity: 0;
+		transform: translate(0, -3rem);
+		-webkit-transform: translate(0, -3rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@-moz-keyframes abajo {
+	0% {
+		opacity: 0;
+		transform: translate(0, -3rem);
+		-webkit-transform: translate(0, -3rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@-o-keyframes abajo {
+	0% {
+		opacity: 0;
+		transform: translate(0, -3rem);
+		-webkit-transform: translate(0, -3rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+/* ANIMATION NAV WORK */
+
+#work nav  {
+	animation: derecha 1.5s;
+	-webkit-animation: derecha 1.5s;
+	-moz-animation: derecha 1.5s;
+	-o-animation: derecha 1.5s;
+}
+
+/* ANIMATION PHOTOS WORK */
+
+#work .photos  {
+	animation: izquierda 1.5s;
+	-webkit-animation: izquierda 1.5s;
+	-moz-animation: izquierda 1.5s;
+	-o-animation: izquierda 1.5s;
+}
+
+@keyframes izquierda {
+	0% {
+		opacity: 0;
+		transform: translate(3rem, 0);
+		-webkit-transform: translate(3rem, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@-webkit-keyframes izquierda {
+	0% {
+		opacity: 0;
+		transform: translate(3rem, 0);
+		-webkit-transform: translate(3rem, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@-moz-keyframes izquierda {
+	0% {
+		opacity: 0;
+		transform: translate(3rem, 0);
+		-webkit-transform: translate(3rem, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@-o-keyframes izquierda {
+	0% {
+		opacity: 0;
+		transform: translate(3rem, 0);
+		-webkit-transform: translate(3rem, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+}

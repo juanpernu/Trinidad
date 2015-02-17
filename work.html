@@ -31,30 +31,24 @@
     </div>
 
     <div class="row content">
-      <nav>
-        <div class="nav-ppal"><a href="#" class="active">ALL</a></div>
-        <div class="nav-ppal"><a href="">ARDOR</a></div>
-        <div class="nav-ppal"><a href="">BLACK & WHITE</a></div>
-        <div class="nav-ppal"><a href="">HELENA</a></div>
+      <nav id="filters">
+        <div class="nav-ppal"><a href="#" class="active" data-filter="*">ALL</a></div>
+        <div class="nav-ppal"><a href="#" data-filter=".ardor">ARDOR</a></div>
+        <div class="nav-ppal"><a href="#" data-filter=".b-w">BLACK & WHITE</a></div>
+        <div class="nav-ppal"><a href="#" data-filter=".helena">HELENA</a></div>
       </nav>
 
       <div class="row photos">
-          <div class="row">
-                <a href="imgs/work/b&w/1.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/1.jpg')"></a>
-                <a href="imgs/work/b&w/2.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/2.jpg')"></a>
-                <a href="imgs/work/b&w/3.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/3.jpg')"></a>
-          </div>  
-
-          <div class="row">
-                <a href="imgs/work/b&w/4.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/4.jpg')"></a>
-                <a href="imgs/work/b&w/5.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/5.jpg')"></a>
-                <a href="imgs/work/b&w/6.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/6.jpg')"></a>
-          </div>  
-
-          <div class="row">
-                <a href="imgs/work/b&w/1.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/1.jpg')"></a>
-                <a href="imgs/work/b&w/2.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/2.jpg')"></a>
-                <a href="imgs/work/b&w/3.jpg" target="_self" class="photo-back" style="background-image: url('imgs/work/b&w/4.jpg')"></a>
+          <div class="row" id="container">
+                <a href="imgs/work/b&w/1.jpg" target="_self" class="photo-back ardor" style="background-image: url('imgs/work/b&w/1.jpg')"></a>
+                <a href="imgs/work/b&w/2.jpg" target="_self" class="photo-back helena" style="background-image: url('imgs/work/b&w/2.jpg')"></a>
+                <a href="imgs/work/b&w/3.jpg" target="_self" class="photo-back ardor" style="background-image: url('imgs/work/b&w/3.jpg')"></a>
+                <a href="imgs/work/b&w/4.jpg" target="_self" class="photo-back helena" style="background-image: url('imgs/work/b&w/4.jpg')"></a>
+                <a href="imgs/work/b&w/5.jpg" target="_self" class="photo-back b-w" style="background-image: url('imgs/work/b&w/5.jpg')"></a>
+                <a href="imgs/work/b&w/6.jpg" target="_self" class="photo-back helena" style="background-image: url('imgs/work/b&w/6.jpg')"></a>
+                <a href="imgs/work/b&w/1.jpg" target="_self" class="photo-back b-w" style="background-image: url('imgs/work/b&w/1.jpg')"></a>
+                <a href="imgs/work/b&w/2.jpg" target="_self" class="photo-back ardor" style="background-image: url('imgs/work/b&w/2.jpg')"></a>
+                <a href="imgs/work/b&w/3.jpg" target="_self" class="photo-back b-w" style="background-image: url('imgs/work/b&w/4.jpg')"></a>
           </div>  
       </div>
       
@@ -69,6 +63,19 @@
                 type:'image',
             });
         });
+    </script>
+
+    <script src="js/isotope/isotope.pkgd.js"></script>
+    <script type="text/javascript">
+      // init Isotope
+      var $container = $('#container').isotope({
+        // options
+      });
+      // filter items on button click
+      $('#filters').on( 'click', 'a', function() {
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({ filter: filterValue });
+      });
     </script>
   </body>
 </html>
