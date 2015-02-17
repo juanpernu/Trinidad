@@ -167,3 +167,94 @@ a:hover, a:active {
 		-webkit-transform: translate(0, 0);
 	}
 }
+
+
+
+/* WORK STYLE */
+
+#work {
+	overflow: auto;
+	clear: both;
+}
+
+#work .row {
+	margin: 0;
+	padding: 0;
+}
+
+#work .header {
+	width: 100%;
+	height: 120px;
+	position: fixed;
+	display: block;
+}
+
+#work .content {
+	margin-top: 10%;
+}
+
+#work nav {
+	display: block;
+	left: 50px;
+	margin-top: -4px;
+	position: fixed;
+	text-align: left;
+	width: 200px;
+}
+
+.nav-ppal {
+	line-height: 2;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+#work a {
+	color: #555;
+} 
+
+#work .photos {
+	display: block;
+text-align: left;
+margin-bottom: -50px;
+margin-left: 250px;
+margin-right: 0px;
+position: relative;
+}
+
+.photo-back {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	float: left;
+	width: 31%;
+	padding-bottom: 30%;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	opacity: .5;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+}
+
+.photo-back::after {
+	content: '';
+	display: block;
+	width: 100%;
+	padding-top: 100%;
+}
+
+.photo-back:hover {
+	opacity: 1;
+}
+
+#work .photos .row .photo-back:last-child {
+	margin-right:0 !important;
+}
+
+#work .logo {
+	position: relative;
+	margin: 3.5rem;
+	max-width: 200px;
+}
